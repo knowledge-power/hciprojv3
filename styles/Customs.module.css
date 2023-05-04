@@ -5,13 +5,16 @@
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(#0a021a, #330099);
+    position: absolute;
+    align-items: flex-start;
+    
 }
 
 .clouds {
     width: 100vw;
     height: 100vh;
-    border: 1px solid red;
-    position: absolute;   
+    /*border: 1px solid red;*/
+    position: fixed;   
 }
 
 #leftClouds {
@@ -39,20 +42,139 @@
 }
 
 #leftBottomClouds {
-    left: -10;
-    animation: leftBottomClouds 3.5s infinite;
+    left: -20;
+    animation: leftBottomClouds 5.5s infinite;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes leftBottomClouds {
-    0% {left: -10px}
-    50% {left: 0px}
-    100% {left: -10px}
+    0% {left: -20px}
+    60% {left: 0px}
+    100% {left: -20px}
 }
 
 .mainLogo {
     width: 100vw;
     height: 100vh;
     border: 1px solid green;
-    position: absolute;
+    position: fixed;
+    background-image: url('/images/heavensGateLogoTrans.png');
+    background-attachment: relative;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.mainLogoResize {
+    width: 20vw;
+    height: 20vh;
+    /*border: 1px solid yellow;*/
+    position: fixed;
+    animation: logoResize 1.3s 1;
+    animation-timing-function: ease;
+    overflow: hidden;
+    background-image: url('/images/heavensGateLogoTrans.png');
+    background-attachment: relative;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+@keyframes logoResize {
+    0% {
+        width: 100vw;
+        height: 100vh;
+    }
+    100% {
+        width: 20vw;
+        height: 20vh;
+    }
+}
+
+
+#rightBottomClouds {
+    right: -60px;
+    animation: rightBottomClouds 12.5s infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rightBottomClouds {
+    0% {right: -60px}
+    60% {right: 0px}
+    100% {right: -60px}
+}
+
+#marqueeClouds {
+    left: -1500px;
+    animation: marqClouds 160.1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes marqClouds {
+    0% {left: 0px}
+    50% {left: 1900px}
+    100% {left: 0px}
+}
+
+
+/*------------------Cloud changes----------------*/
+#leftCloudsHide {
+    left: -1000px;
+    animation: leftCloudsHide 2.5s 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes leftCloudsHide {
+    0% {left: -10px}
+    30% {left: -800px}
+    100% {left: -1000px}
+}
+
+#leftBottomCloudsHide {
+    left: -1000px;
+    animation: leftBottomCloudsHide 2.5s 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes leftBottomCloudsHide {
+    0% {left: -10px}
+    30% {left: -800px}
+    100% {left: -1000px}
+}
+
+#rightCloudsHide {
+    right: -1600px;
+    animation: rightCloudsHide 2.5s 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rightCloudsHide {
+    0% {right: -60px}
+    30% {right: -1500px}
+    100% {right: -1600px}
+}
+
+#rightBottomCloudsHide {
+    right: -1600px;
+    animation: rightBottomCloudsHide 2.5s 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rightBottomCloudsHide {
+    0% {right: -60px}
+    30% {right: -1500px}
+    100% {right: -1600px}
+}
+
+#marqueeCloudsHide {
+    left: 2500px;
+    animation: marqCloudsHide 1.5s 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes marqCloudsHide {
+    0% {left: 0px}    
+    100% {left: 2000px}
 }
