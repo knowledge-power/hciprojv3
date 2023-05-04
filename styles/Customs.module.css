@@ -1,0 +1,58 @@
+.main {
+    width: 100vw;
+    height: 200vh;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#0a021a, #330099);
+}
+
+.clouds {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+    position: absolute;   
+}
+
+#leftClouds {
+    left: -10;
+    animation: leftClouds 3.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leftClouds {
+    0% {left: -10px}
+    50% {left: 0px}
+    100% {left: -10px}
+}
+
+#rightClouds {
+    right: -60;
+    animation: rightClouds 10.5s infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rightClouds {
+    0% {right: -60px}
+    70% {right: 0px}
+    100% {right: -60px}
+}
+
+#leftBottomClouds {
+    left: -10;
+    animation: leftBottomClouds 3.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leftBottomClouds {
+    0% {left: -10px}
+    50% {left: 0px}
+    100% {left: -10px}
+}
+
+.mainLogo {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid green;
+    position: absolute;
+}
