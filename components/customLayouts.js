@@ -74,11 +74,11 @@ We are so very thankful that we have been recipients of this opportunity to prep
     );
 };
 
-export const Tabs = () => {
+export const Tabs = ({c}) => {
 
     return(
         <>
-            <div >
+            <div class={c}>
 
             </div>
         </>
