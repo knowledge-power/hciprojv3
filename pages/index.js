@@ -26,6 +26,7 @@ export default function Home() {
   const [mainLogoSize, setMainLogoSize] = useState(CusStyles.mainLogo);
   const [introCont, setIntroCont] = useState(intro.contentHide);
   const [introImg, setIntroImg] = useState(intro.introImgHide);
+  const [tab, setTab] = useState(CusStyles.tabsContHide);
 
   const [scrollY, setScrollY] = useState(0);
   const onScroll = useCallback(
@@ -36,13 +37,13 @@ export default function Home() {
         setLeftBottomCloud(CusStyles.leftBottomCloudsHide);
         setRightCloud(CusStyles.rightCloudsHide);
         setRightBottomCloud(CusStyles.rightBottomCloudsHide);
-        setMarqClouds(CusStyles.marqueeCloudsHide);
-        
+        setMarqClouds(CusStyles.marqueeCloudsHide);        
         setMainLogoSize(CusStyles.mainLogoResize);
         console.log("yOffset", pageYOffset, "Scrolly", scrollY);
         setScrollY(window.pageYOffset);
         //setIntroCont(intro.contentShow);
         if(scrollY >= 250){
+          setTab(CusStyles.tabsContShow);
           setIntroCont(intro.contentShow);
           if(scrollY >= 300){
             setIntroImg(intro.introImg);
@@ -130,7 +131,7 @@ export default function Home() {
             priority
           /></Clouds>
           <Intro ids={introCont} imgids={introImg} />     
-          <Tabs c={CusStyles.tabsCont} />     
+          <Tabs c={tab} />     
         </MainCont>
       </main>
     </>

@@ -180,7 +180,7 @@
 }
 
 /*--------------------Navigations-----------------------*/
-.tabsCont {
+.tabsContShow {
     /*border: 1px solid red;*/
     width: 100vw;
     height: 10vh;
@@ -189,6 +189,25 @@
     align-items: end;
     justify-content: end;
     top: 4vh;    
+    animation: tab 1.5s 1;
+    opacity: 1;
+}
+
+@keyframes tab {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.tabsContHide {
+    /*border: 1px solid red;*/
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    align-items: end;
+    justify-content: end;
+    top: 4vh; 
+    opacity: 0;   
 }
 
 .tabsSec {
