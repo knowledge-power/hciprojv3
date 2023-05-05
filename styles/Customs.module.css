@@ -178,3 +178,12 @@
     0% {left: 0px}    
     100% {left: 2000px}
 }
+
+/*--------------------Navigations-----------------------*/
+.tabsCont {
+    /*border: 1px solid red;*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}

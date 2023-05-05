@@ -4,9 +4,9 @@ import { Inter } from 'next/font/google'
 import styles from 'imp/styles/Home.module.css'
 import CusStyles from 'imp/styles/Customs.module.css'
 import intro from 'imp/styles/Intro.module.css'
-import {MainCont, Clouds, Logo, Intro} from 'components/customLayouts.js'
+import {MainCont, Clouds, Logo, Intro, Tabs} from 'components/customLayouts.js'
 import { useCallback, useEffect, useState } from 'react'
-import Keys from './keys'
+
 
 
 
@@ -129,8 +129,8 @@ export default function Home() {
             alt='rightBigCloud'
             priority
           /></Clouds>
-          <Intro ids={introCont} imgids={introImg} />          
-          
+          <Intro ids={introCont} imgids={introImg} />     
+          <Tabs c={CusStyles.tabsCont} />     
         </MainCont>
       </main>
     </>
