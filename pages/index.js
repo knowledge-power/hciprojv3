@@ -26,6 +26,7 @@ export default function Home() {
   const [mainLogoSize, setMainLogoSize] = useState(CusStyles.mainLogo);
   const [introCont, setIntroCont] = useState(intro.contentHide);
   const [introImg, setIntroImg] = useState(intro.introImgHide);
+  const [titleCont, setTitleCont] = useState(intro.titleHide);
   const [tab, setTab] = useState(CusStyles.tabsContHide);
 
   const [scrollY, setScrollY] = useState(0);
@@ -45,6 +46,7 @@ export default function Home() {
         if(scrollY >= 250){
           setTab(CusStyles.tabsContShow);
           setIntroCont(intro.contentShow);
+          setTitleCont(intro.titleShow);
           if(scrollY >= 300){
             setIntroImg(intro.introImg);
           }
@@ -130,7 +132,7 @@ export default function Home() {
             alt='rightBigCloud'
             priority
           /></Clouds>
-          <Intro ids={introCont} imgids={introImg} />     
+          <Intro ids={introCont} imgids={introImg} titleIds={titleCont} />     
           <Tabs c={tab} />     
         </MainCont>
       </main>
