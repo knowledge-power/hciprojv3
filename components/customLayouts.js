@@ -84,7 +84,7 @@ export const Tabs = ({c}) => {
             <div class={c}>
                 <div class={CusStyle.tabsSec}>
                     <Link href="/" class={CusStyle.navs}>Home</Link>
-                    <div class={CusStyle.navs} onMouseEnter={()=>{setKeyDD(CusStyle.navDDContShow)}}>
+                    <div class={CusStyle.navs} onMouseEnter={()=>{setKeyDD(CusStyle.navDDContShow)}} onClick={()=>{setKeyDD(CusStyle.navDDContHide)}}>
                         Keys                                                
                     </div>
                     <div class={keysDD} onMouseLeave={()=>{setKeyDD(CusStyle.navDDContHide)}}>
