@@ -1,5 +1,7 @@
 import styles from 'imp/styles/Customs.module.css'
 import intro from 'imp/styles/Intro.module.css'
+import CusStyle from 'imp/styles/Customs.module.css'
+import Link from 'next/link';
 
 
 export const MainCont = ({children}) => {
@@ -79,7 +81,20 @@ export const Tabs = ({c}) => {
     return(
         <>
             <div class={c}>
-
+                <div class={CusStyle.tabsSec}>
+                    <Link href="/" class={CusStyle.navs}>Home</Link>
+                    <div class={CusStyle.navs}>
+                        Keys                                                
+                    </div>
+                    <div class={CusStyle.navDDCont}>
+                        <div class={CusStyle.navDD}><Link href={'/dosIntro'}>Do's Intro: Our Purpose -- The Simple Bottom Line</Link></div>
+                        <div class={CusStyle.navDD}>Statement by an E.T Presently Incarnate</div>
+                        <div class={CusStyle.navDD}>Overview of Present Mission</div>
+                        <div class={CusStyle.navDD}>Last Change To Advance Beyond Human</div>
+                    </div>
+                    <div class={CusStyle.navs}>Order</div>
+                    <div class={CusStyle.navs}>About</div>
+                </div>
             </div>
         </>
     );

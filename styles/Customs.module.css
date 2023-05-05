@@ -183,7 +183,62 @@
 .tabsCont {
     /*border: 1px solid red;*/
     width: 100vw;
-    height: 100vh;
+    height: 10vh;
     display: flex;
-
+    position: fixed;
+    align-items: end;
+    justify-content: end;
+    top: 4vh;    
 }
+
+.tabsSec {
+    /*border: 1px solid green;*/
+    width: 50%;
+    height: 100%;
+    margin-right: 4vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navs {
+    /*border: 1px solid blue;*/
+    transition: 0.3s;    
+}
+
+
+.navs:hover{
+    color: rgb(143, 188, 255);
+    cursor: pointer;
+    transition: 0.3s;    
+}
+
+#keyNav:hover {
+    color: red;
+}
+
+.navDDCont {
+    display: inline;
+    position: absolute;
+    top: 10vh;
+    left: 53vw;
+}
+
+.navs:hover .navDDCont {
+    display: inline;
+}
+
+.navDD {    
+    border: 1px solid pink;
+    padding: 10px;
+    position: relative;
+}
+
+.navDD:hover {
+    color:rgb(143, 188, 255);
+    cursor: pointer;
+}
+
