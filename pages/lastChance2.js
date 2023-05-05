@@ -1,10 +1,10 @@
-import Pages from 'imp/styles/lastchance.module.css'
+import Pages from 'imp/styles/statement.module.css'
 import styles from 'imp/styles/Customs.module.css'
 import intro from 'imp/styles/Intro.module.css'
 import CusStyle from 'imp/styles/Customs.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
-export default function LastChance(){
+export default function LastChance2(){
 
     return(
         <>
