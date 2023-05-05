@@ -220,15 +220,18 @@
     color: red;
 }
 
-.navDDCont {
-    display: inline;
+.navDDContHide {
+    display: none;
     position: absolute;
     top: 10vh;
     left: 53vw;
 }
 
-.navs:hover .navDDCont {
+.navDDContShow {
     display: inline;
+    position: absolute;
+    top: 10vh;
+    left: 53vw;
 }
 
 .navDD {    
