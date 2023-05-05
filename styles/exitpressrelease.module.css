@@ -1,0 +1,16 @@
+.main {
+    width: 100vw;
+    height: fit-content;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#0a021a, #330099);
+    color: white;
+    position: absolute;
+    text-align: justify;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
