@@ -1,13 +1,16 @@
 import Pages from 'imp/styles/exitpressrelease.module.css'
 import styles from 'imp/styles/Customs.module.css'
 import intro from 'imp/styles/Intro.module.css'
-import CusStyle from 'imp/styles/Customs.module.css'
+import CusStyles from 'imp/styles/Customs.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
+import { Tabs } from 'imp/components/customLayouts';
+
 export default function ExitPressRelease(){
 
     return(
         <>
+            <Tabs c={CusStyles.tabsContShow} />
             <div class={Pages.main}>
             <h5> To be issued to the News Media  3-22-97
             <br></br>By the time you read this, we suspect that the human bodies we were wearing have been found and that a flurry of fragmented reports have begun to hit the wire services. For those who want to know the facts, the following statement has been issued.</h5>

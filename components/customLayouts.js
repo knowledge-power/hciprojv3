@@ -92,13 +92,13 @@ export const Tabs = ({c}) => {
                         <div class={CusStyle.navDD}><Link href={'/statement'}>Statement by an E.T Presently Incarnate</Link></div>
                         <div class={CusStyle.navDD}><Link href={'/OverviewOfPresentMission'}>Overview of Present Mission</Link></div>
                         <div class={CusStyle.navDD}><Link href={'/lastChance'}>Last Chance To Advance Beyond Human</Link></div>
-                        <div class={CusStyle.navDD}><Link href={'/accessBook'}>To Access Our Book Online in its Entirety</Link></div>
+                        {/*<div class={CusStyle.navDD}><Link href={'/accessBook'}>To Access Our Book Online in its Entirety</Link></div>*/}
                         <div class={CusStyle.navDD}><Link href={'/transcriptsOfTwo'}>Transcripts of Two Recent Videos</Link></div>
                         <div class={CusStyle.navDD}><Link href={'/positionAgainstSuicide'}>Our Position Against Suicide</Link></div>
                         <div class={CusStyle.navDD}><Link href={'/HowAMember'}>How a member of the kingdom of Heaven Might Appear</Link></div>
                         <div class={CusStyle.navDD}><Link href={'/earthExitStatement'}>Earth Exit Statements by Students</Link></div>
-                        <div class={CusStyle.navDD}><Link href={'/ExitPressRelease'}>Exit Press Release</Link></div>
-                        <div class={CusStyle.navDD}><Link href={'/awayTeam'}>Away Team Returns to Level Above Human</Link></div>
+                        <div class={CusStyle.navDD}><Link href={'/ExitPressRelease'}>Exit Press Release, Away Team Returns to Level Above Human </Link></div>
+                        {/*<div class={CusStyle.navDD}><Link href={'/awayTeam'}>Away Team Returns to Level Above Human</Link></div>*/}
                     </div>
                     <div class={CusStyle.navs}>Order</div>
                     <div class={CusStyle.navs}>About</div>

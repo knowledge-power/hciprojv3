@@ -1,13 +1,16 @@
 import Pages from 'imp/styles/lastchance.module.css'
 import styles from 'imp/styles/Customs.module.css'
 import intro from 'imp/styles/Intro.module.css'
-import CusStyle from 'imp/styles/Customs.module.css'
+import CusStyles from 'imp/styles/Customs.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
+import { Tabs } from 'imp/components/customLayouts';
+
 export default function LastChance(){
 
     return(
         <>
+            <Tabs c={CusStyles.tabsContShow} />
             <div class={Pages.main}>
             <hr width ="100%" align = "center" size="1"></hr><br></br>
             <h2>Crew from the Evolutionary Level Above Human Offers -</h2>
