@@ -100,8 +100,9 @@ export const Tabs = ({c}) => {
                         <div class={CusStyle.navDD}><Link href={'/ExitPressRelease'}>Exit Press Release, Away Team Returns to Level Above Human </Link></div>
                         {/*<div class={CusStyle.navDD}><Link href={'/awayTeam'}>Away Team Returns to Level Above Human</Link></div>*/}
                     </div>
-                    <div class={CusStyle.navs}>Order</div>
-                    <div class={CusStyle.navs}>About</div>
+                    <Link class={CusStyle.navs} href={'/order'}>Order</Link>
+
+                    <Link class={CusStyle.navs} href={'/about'}>About</Link>
                 </div>
             </div>
         </>
