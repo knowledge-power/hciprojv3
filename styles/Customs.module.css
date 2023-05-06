@@ -192,6 +192,8 @@
     top: 4vh;    
     animation: tab 1.5s 1;
     opacity: 1;
+    background-image: linear-gradient(to left, rgb(124, 55, 235), rgba(200,100,230,0.0));
+    z-index: 1;
 }
 
 @keyframes tab {
@@ -276,5 +278,6 @@
 .navDD:hover {
     color:rgb(143, 188, 255);
     cursor: pointer;
+    background-color: rgba(50, 50, 50, 1);
 }
 

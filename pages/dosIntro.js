@@ -1,19 +1,21 @@
 import Pages from 'imp/styles/dosintro.module.css'
-import styles from 'imp/styles/Customs.module.css'
 import intro from 'imp/styles/Intro.module.css'
-import CusStyle from 'imp/styles/Customs.module.css'
+import CusStyles from 'imp/styles/Customs.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
+import { Tabs } from 'imp/components/customLayouts';
 
 export default function DosIntro() {
 
 
     return(
-        <>
-
-            <div class={Pages.main}>
+        <>            
+            <Tabs c={CusStyles.tabsContShow} />
+            <div class={Pages.main}>            
             <hr width ="100%" align = "center" size="1"></hr>
+            
             <h1>Do's Intro: Purpose - Belief</h1>
+            
             <hr width ="100%" align = "center" size="1"></hr>
             <br></br>
             <h3>What Our Purpose Is - The Simple "Bottom Line"</h3><br></br>
